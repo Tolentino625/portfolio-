@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle">Lucas Tolentino - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Portfólio</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-i18n="portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-i18n="about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html#contato" class="nav-link" data-i18n="contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-controls">
+                <label class="dark">
+                    <input type="checkbox" id="dark-toggle">
+                    <span class="darkmode"></span>
+                </label>
+                <button id="lang-toggle" class="lang-btn">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title" data-i18n="heroTitle">Olá, eu sou o Lucas Tolentino</h2>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Estudante do Colegio Cotemig</p>
+                <div class="hero-description">
+                    <p data-i18n="heroDescription">Tenho 16 anos, sou estudante no Colegio Cotemig, atualmente no 2º ano do curso. Tenho paixão por tecnologia, desenvolvimento de sistemas e pela constante evolução do mundo digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h3 class="section-title" data-i18n="projectsTitle">Meus Projetos</h3>
+                <div class="projects-grid">
+                    <div class="card fade-in">
+                        <div class="card-image">
+                            <img src="imagens/Captura de tela 2025-09-19 101011.png" alt="" >
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title" data-i18n="project1Title">Tolentino Tech</h4>
+                            <p class="card-description" data-i18n="project1Description">Desenvolvi um site de e-commerce voltado para produtos de tecnologia, com o objetivo de oferecer uma experiência prática e intuitiva aos usuários. O projeto foi construído utilizando HTML e CSS para estruturar e estilizar as páginas, garantindo um design moderno e funcional. O sistema possibilita a organização dos produtos e uma navegação simples e eficiente. Esse trabalho me ajudou a aplicar na prática os conhecimentos adquiridos em sala de aula, fortalecendo minhas habilidades em desenvolvimento web.</p>
+                            <div class="card-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Figma</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="imagens/Captura de tela 2025-09-22 213500.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title" data-i18n="project2Title">Site Belara </h4>
+                            <p class="card-description" data-i18n="project2Description">Como parte das minhas atividades de desenvolvimento, realizei a reprodução do template Belara, da Colorlib. O objetivo foi recriar a estrutura e o design do site, organizando as seções, adaptando o layout para diferentes dispositivos e valorizando imagens e tipografia. Essa prática contribuiu para o aprimoramento das minhas habilidades em design de interfaces e experiência do usuário.</p>
+                            <div class="card-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                       
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="imagens/tulen.png" alt="" >
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title" data-i18n="project3Title"></h4>
+                            <p class="card-description" data-i18n="project3Description"></p>
+                            <div class="card-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+                        <a href="https://github.com/Tolentino625" target="_blank" class="contact-link" style="min-width:180px;display:inline-block;">
+                            <svg style="vertical-align:middle;margin-right:8px;" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            <span data-i18n="githubButton">Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="copyright">&copy; 2025 Lucas Tolentino. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+ </body>
+ </html>

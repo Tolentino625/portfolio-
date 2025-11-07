@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Tolentino - Portifolio</title>
+    <title data-i18n="pageTitle">Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+     <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>LT</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-i18n="portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active" data-i18n="about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link" data-i18n="contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-controls">
+                <label class="dark">
+                    <input type="checkbox" id="dark-toggle">
+                    <span class="darkmode"></span>
+                </label>
+                <button id="lang-toggle" class="lang-btn">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text slide-in-left">
+                        <h2 class="about-title" data-i18n="aboutTitle">Olá, eu sou o Lucas Tolentino</h2>
+                        <p class="about-subtitle" data-i18n="aboutSubtitle">Sou estudante do Colegio Cotmeig</p>
+                        <div class="about-description">
+                            <p data-i18n="aboutText">!Durante minha trajetória acadêmica, venho desenvolvendo habilidades sólidas em programação, banco de dados entyre outras. Tenho experiência com linguagens como JavaScript, venho explorando também áreas como desenvolvimento web, banco de dados e metodologias ágeis. Meu objetivo é aplicar o conhecimento adquirido em sala de aula e nos meus projetos pessoais para resolver problemas reais, contribuindo para soluções eficientes, escaláveis e bem estruturadas. Sou uma pessoa curiosa, comprometida e sempre em busca de novos aprendizados.!</p>
+                        </div>
+                    </div>
+                    <div class="about-image slide-in-right">
+                    <img src="imagens/WhatsApp Image 2025-11-07 at 11.34.25.jpeg" alt="Foto profissional de desenvolvedor em estilo minimalista moderno" onerror="this.onerror=null; this.src='';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h3 class="section-title" data-i18n="skillsTitle">Habilidades & Tecnologias</h3>
+                <div class="skills-grid">
+                    <div class="skill-category fade-in fade-in-delay-1">
+                        <h4 class="skill-title" data-i18n="frontend">Frontend</h4>
+                        <ul class="skill-list">
+                            <li>HTML & CSS</li>
+                            <li>Java Script</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-title" data-i18n="backend">Backend</h4>
+                        <ul class="skill-list">
+                            <li>C#</li>
+                            <li>MySQL</li>
+
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-title" data-i18n="designTools">Design & Tools</h4>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Canva</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container">
+                <h3 class="section-title" data-i18n="experienceTitle">Certificações</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-i18n="experienceDate">07/2025</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title" data-i18n="jobTitle">Certificação Cisco Computer Hardware  Basic— Cisco</h4>
+                            <p class="timeline-company" data-i18n="company">Cisco</p>
+                            <p class="timeline-description" data-i18n="jobDescription">Implementação de tecnologias educacionais, com orientação e capacitação de professores no uso de plataformas digitais para aprimorar o ensino. Responsável por ajustes avançados de software e hardware em dispositivos eletrônicos dos alunos, assegurando acessibilidade e funcionalidade, além de promover a incorporação de novas ferramentas digitais para enriquecer a experiência educacional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <h3 class="section-title" data-i18n="contactTitle">Vamos Conversar?</h3>
+                <div class="contact-content">
+                    <p class="contact-description" data-i18n="contactDescription">Estou sempre aberto a novos desafios e oportunidades de colaboração.</p>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telefone" id="telefone" placeholder="Telefone"  oninput=masc_telefone() maxlength="14"required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="form-btn">Enviar</button>
+                    </form>
+                    <div class="contact-links">
+                        <a href="https://wa.me/31995566167" class="contact-link">(31)99556-6167</a>
+                        <a href="https://www.linkedin.com/in/lucas-t-a353bb36a/" class="contact-link">LinkedIn</a>
+                        <a href="https://github.com/Tolentino625" class="contact-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lucas Tolentino. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
